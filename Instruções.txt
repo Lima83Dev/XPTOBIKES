@@ -1,0 +1,56 @@
+Com o crescimento de sua loja, Pedro solicitou novas funcionalidades para o sistema. Os desenvolvedores sugeriram criar do zero uma versão 2.0 e manter somente as funcionalidades mais utilizadas da versão anterior. O sistema deve funcionar da seguinte maneira:
+
+1. Na tela principal, será apresentada a mensagem “Bemvindo ao autoatendimento da bicicletaria XPTO Bikes.” Abaixo da mensagem deve ser exibida a mensagem solicitando o nome do cliente.
+
+2. Ao digitar seu nome, o sistema deve apresentar o seguinte menu:
+2.1. Opção 1 – Ver promoções.
+2.2. Opção 2 – Solicitar serviço de manutenção.
+2.3. Opção 3 – Listar carrinho de compra.
+2.3. Opção 4 - Finalizar carrinho de compra.
+2.5. Opção 0 – Sair
+
+3. Abaixo deve ser exibida a mensagem “Digite sua opção desejada:”.
+
+4. Se o cliente digitar a opção 1, o sistema deve apresentar os seguintes itens:
+
+4.1. Código 101 - Bicicleta nova na cor amarela, aro 26, com 18 marchas e na promoção pelo preço de R$ 999,99.
+
+4.2. Código 102 - Bicicleta usada na cor azul, aro 26, com 18 marchas e com o valor promocional de R$ 400,00.
+
+4.3. Código 103 - Capacete de proteção por R$59,99. 
+4.4. Código 104 - Freio a disco por R$ 89,99. 
+4.5. 8 – Adicionar ao carrinho de compras. 
+4.6. 0 – Voltar.
+
+5. Se o cliente digitar a opção 2, o sistema deve apresentar os serviços disponíveis:
+5.1. Código 201 - Troca de pneu - R$ 55,99.
+5.2. Código 202 - Lavagem completa -R$ 12,99. 
+5.3. Código 203 - Freio - R$ 10,99. 
+5.4. 8 – Adicionar ao carrinho de compras. 
+5.5. 0 – Voltar.
+
+6. Se o cliente digitar a opção 3, o sistema deve listar o nome e o valor dos produtos incluídos no carrinho de compras. Se o cliente digitar a opção 4, o sistema deve perguntar a forma de pagamento (dinheiro ou cartão). No dinheiro, o sistema deve calcular 10% de desconto do valor final.
+
+7. Observação: no autoatendimento, o cliente consegue adicionar no máximo 3 produtos/serviços em seu carrinho de compras. Se ele atingir esse número, o sistema deve apresentar a mensagem informando que o seu carrinho de compras já está cheio.
+
+Acesso restrito
+
+8. Ao digitar o código xptorestrito no lugar do nome do cliente, o sistema deve abrir a área restrita dos funcionários.
+
+9. O sistema deve perguntar o nome do cliente e o valor gasto na loja. Nesses casos, o próprio funcionário acompanhou o cliente e sabe exatamente os itens comprados ou serviços adquiridos.
+
+10. O funcionário deve entrar com a forma de pagamento (D – dinheiro ou C – cartão), e o sistema deve apresentar o valor final a ser pago. Se o pagamento for no dinheiro, o sistema deve calcular 10% de desconto no valor final.
+
+Funcionamento geral do sistema
+
+11. O sistema deve validar todas as entradas do teclado, quando possível;
+
+12. O sistema deve ficar rodando até que seja a opção 0 no menu principal.
+
+13. O sistema deve apresentar a quantidade de vendas e o valor total das vendas do dia ao ser finalizado.
+
+
+Transforme a exibição do menu principal em uma função sem retorno e sem parâmetros.
+Transforme o cálculo do desconto em uma função. A função deve receber por parâmetro o valor total do carrinho e retornar o valor do desconto.
+
+
